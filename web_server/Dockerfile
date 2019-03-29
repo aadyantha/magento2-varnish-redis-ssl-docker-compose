@@ -20,6 +20,10 @@ RUN apt-get update \
 ##install supervisor and setup supervisord.conf file
     && apt-get install -y supervisor \
     && mkdir -p /var/log/supervisor
+    
+RUN curl --silent --show-error https://getcomposer.org/installer | php && \
+	mv composer.phar /usr/bin/composer
+    
 env APACHE_RUN_USER    www-data
 env APACHE_RUN_GROUP   www-data
 env APACHE_PID_FILE    /var/run/apache2.pid
