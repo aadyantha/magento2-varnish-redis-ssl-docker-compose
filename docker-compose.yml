@@ -30,8 +30,12 @@ services:
       - "6082:6082"
     networks:
       - internal
-   
-
+      
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 8025:8025
+      
   web_server:
     build:
       context: ./web_server/
