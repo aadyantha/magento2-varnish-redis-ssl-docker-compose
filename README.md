@@ -104,3 +104,7 @@ If you face any issues, kindly report back.
 
 If you have any issues, contact us at support@webkul.com or raise ticket at https://webkul.uvdesk.com/
 
+#### Aadyantha Custom
+
+Install and configure this extension for email setup https://github.com/mageplaza/magento-2-smtp . This uses Mailhog for sending emails.
+
